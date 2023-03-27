@@ -32,6 +32,6 @@ if __name__ == '__main__':
     print(f"Собственные движения цен ETH:")
     for i in range(len(btc_data)):
         print("{:>12}: ".format(dates[i]), end="")
-        # Предполагаю, что можно а считать так: (как правильно я не уверен)
+        # Предполагаю, что можно считать так: (как правильно я не уверен)
         change = eth_change[i] - btc_change[i] * r
         print("{:+5.5f}".format(change))
